@@ -70,7 +70,7 @@ const createSlider = () => {
   imagesArea.style.display = 'none'
   const duration = document.getElementById('doration').value * 1000
   if (duration <= 0) {
-    alert('Please Provide a Positive Duration Number')
+    alert('Please Provide a Positive Duration Number and search again')
     return location.assign(location.href)
   }
   sliders.forEach((slide) => {
