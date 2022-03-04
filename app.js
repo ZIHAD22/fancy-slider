@@ -69,6 +69,10 @@ const createSlider = () => {
   // hide image aria
   imagesArea.style.display = 'none'
   const duration = document.getElementById('doration').value * 1000
+  if (duration <= 0) {
+    alert('Please Provide a Positive Duration Number')
+    return location.assign(location.href)
+  }
   sliders.forEach((slide) => {
     let item = document.createElement('div')
     item.className = 'slider-item'
